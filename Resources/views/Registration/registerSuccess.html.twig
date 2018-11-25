@@ -1,0 +1,8 @@
+{% extends "@ZestfuleUser/base.html.twig" %}
+{% block body %}
+    {% if user.isEnabled %}
+        {{ 'security.register_success'|trans }}
+    {% else %}
+        {{ 'security.register_confirmed'|trans }}
+    {% endif %}
+{% endblock %}

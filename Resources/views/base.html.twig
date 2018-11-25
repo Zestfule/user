@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="{{ path('security_login') }}">Login</a> - <a href="{{ path('security_register') }}">Register</a> - <a href="{{ path('security_logout') }}">Logout</a>
+    <hr>
+    {% block body %}{% endblock %}
+</body>
+</html>
